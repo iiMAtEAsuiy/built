@@ -59,7 +59,7 @@ if __name__ == "__main__":
 
 
 
-def generate_fake_amazon_code():
+def generate_amazon_code():
     chars = string.ascii_uppercase + string.digits
     part1 = ''.join(random.choices(chars, k=4))
     part2 = ''.join(random.choices(chars, k=4))
@@ -68,17 +68,18 @@ def generate_fake_amazon_code():
 
 # Ask user how many codes to generate
 try:
-    total = int(input("How many fake Amazon codes do you want to generate? "))
+    total = int(input("How many Amazon codes do you want to generate? "))
 except ValueError:
     print("Please enter a valid number.")
     exit()
 
 # Generate codes with 0.2s delay
 for attempt in range(1, total + 1):
-    code = generate_fake_amazon_code()
+    code = generate_amazon_code()
     timestamp = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
     print(f"INVALID | {code} | {timestamp} | ATTEMPT {attempt}")
     time.sleep(0.2)  # 0.2 second delay
+
 
 
 
