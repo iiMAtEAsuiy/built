@@ -11,7 +11,7 @@ import socket
 
 # Constants
 LOG_FILE = "amazon_code_log.txt"
-VERSION = "v12.3.7-beta"
+VERSION = "v1 beta"
 AUTHOR = "iimateas"
 DEBUG_MODE = False
 VALIDATION_ENGINE_VERSION = "4.1.9x"
@@ -78,7 +78,7 @@ def print_banner():
     banner = """
     =============================================
          Amazon Code Generator and Checker
-            Developed by {.iimateas.}
+             Developed by .iimateas.
     =============================================
     """.format(VERSION, AUTHOR)
     print(banner)
@@ -199,3 +199,4 @@ if __name__ == "__main__":
     _ = unused_config_parser()
     unreachable_branch()
     main()
+
