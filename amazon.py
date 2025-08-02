@@ -199,4 +199,3 @@ if __name__ == "__main__":
     _ = unused_config_parser()
     unreachable_branch()
     main()
-
